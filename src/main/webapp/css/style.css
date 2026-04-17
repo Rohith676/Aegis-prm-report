@@ -1,0 +1,441 @@
+fieldset {
+    border: 0;
+}
+
+#companyDetails,
+#results {
+    margin-top: 15px;
+}
+
+#results.hidden {
+    display: none;
+}
+
+#add-user-btn {
+    display: none;
+}
+
+/* Modal Styles */
+.prm-modal-overlay {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10000;
+}
+
+.prm-modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    min-width: 400px;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-success {
+    color: #27ae60;
+    padding: 10px;
+    background: #d4efdf;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.modal-error {
+    color: #c0392b;
+    padding: 10px;
+    background: #fadbd8;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.option-ellipsis {
+    max-width: 435px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.single-company-label {
+    display: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+
+.float-right {
+    float: right;
+}
+
+
+/* ===== Loader ===== */
+.prm-loader {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.prm-loader.hidden {
+    display: none;
+}
+
+.prm-loader-text {
+    margin-top: 12px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* ===== Modal Container Enhancements ===== */
+.modal-container {
+    min-width: 500px;
+    max-width: 580px;
+
+    display: flex;
+    flex-direction: column;
+
+    max-height: 90vh;
+
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* ===== Modal Header ===== */
+.modal-header {
+    padding: 18px 24px 12px;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+.modal-close {
+    float: right;
+    cursor: pointer;
+    font-size: 22px;
+    color: #666;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* ===== Modal Body ===== */
+.modal-body {
+    padding: 16px 24px;
+    overflow-y: auto;
+    flex: 1 1 auto;
+}
+
+/* Utility */
+.hidden {
+    display: none !important;;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+/* ===== Modal Footer ===== */
+.modal-footer {
+    padding: 14px 24px;
+    border-top: 1px solid #eee;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    background: #fff;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    min-width: 90px;
+}
+
+#download-pdf,
+#download-xlsx {
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show-block {
+    display: block !important;
+}
+
+.show-inline {
+    display: inline-block !important;
+}
+
+.btn-secondary {
+    background: #f0f0f0;
+    color: #444;
+    border: 1px solid #ccc;
+    padding: 8px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+.report-container {
+    background: white;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.report-title {
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.info-table {
+    width: 95%;
+    margin-left: 20px;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    font-size: 9px;
+}
+
+.info-table td {
+    padding: 2px 4px;
+    vertical-align: top;
+    border: none;
+}
+
+.label {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 55px;
+}
+
+.info-table td:first-child {
+    width: 45%;
+}
+
+.info-table td:nth-child(2) {
+    width: 45%;
+    padding-left: 6px;
+}
+
+.tick {
+    color: green;
+    font-weight: bold;
+}
+
+.cross {
+    color: red;
+    font-weight: bold;
+}
+
+.nested {
+    border-collapse: collapse;
+    width: 98%;
+    margin-top: 4px;
+    font-size: 9px;
+}
+
+.ola-table {
+    width: 98%;
+}
+
+.nested th {
+    background: #3498db;
+    color: white;
+    padding: 2px 4px;
+    text-align: left;
+    border: 1px solid #333;
+    font-size: 9px;
+}
+
+.nested td {
+    border: 1px solid #333;
+    padding: 2px 4px;
+    text-align: left;
+    font-size: 9px;
+}
+
+.nested tr:nth-child(even) td {
+    background: #f2f8fc;
+}
+
+.flex-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.flex-col {
+    flex: 1;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+
+.tabulator .tabulator-cell {
+    padding: 6px 8px;
+    font-size: 13px;
+}
+
+.tabulator .tabulator-row:hover {
+    background-color: #f5f5f5;
+}
+
+.tabulator i {
+    vertical-align: middle;
+}
+
+
+/* Overlay */
+.prm-modal-overlay {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Modal box */
+.prm-modal-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    min-width: 400px;
+    max-width: 550px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.prm-modal-title {
+    margin: 0 0 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    color: #333;
+}
+
+.prm-highlight {
+    color: #3498db;
+}
+
+/* Body */
+.prm-modal-body {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.prm-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Checkbox */
+.prm-checkbox-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.prm-checkbox-container input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.prm-checkbox-container label.grant {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.prm-checkbox-container label.revoke {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Footer */
+.prm-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Buttons */
+.prm-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.prm-btn.submit.success {
+    background: #27ae60;
+}
+
+.prm-btn.submit.danger {
+    background: #e74c3c;
+}
+
+.prm-btn.cancel {
+    background: #95a5a6;
+}
+
+/* Disabled state */
+.prm-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
