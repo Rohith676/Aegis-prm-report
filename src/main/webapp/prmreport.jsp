@@ -118,7 +118,7 @@
 </div>
 
 <!-- Add User Modal -->
-<div id="addUserModal" class="prm-modal-overlay">
+<div id="addUserModal" class="prm-modal-overlay" style="display:none;">
 <div class="prm-modal-content modal-container">
  
     <!-- ZONE 1: Header always visible -->
