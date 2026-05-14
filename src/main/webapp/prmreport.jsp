@@ -223,7 +223,45 @@ document.addEventListener("DOMContentLoaded", function () {
  
     const companies = parsed.companies || [];
     const companyDetail = parsed.companyDetail || null; 
-    const reportData = parsed.report || [];
+    let reportData = parsed.report || [];
+    /* TEMP TEST DATA */
+    const expandedData = [];
+
+    for(let i = 1; i <= 50; i++) {
+
+        expandedData.push({
+            firstName: "User" + i,
+            lastName: "Test",
+            portalLogin: "user" + i + "@altec.com",
+            registrationType: "AEGIS Registered",
+            jobTitle: "Developer",
+            employedAt: "Altec Industries, Inc.",
+            lastLogin: "2026-05-14",
+
+            hasRenewalAcs: i % 2 === 0,
+            hasPolicyAcs: true,
+            hasClaimsAcs: i % 3 === 0,
+            hasRiskAssessmentAcs: i % 4 === 0,
+            hasERiskAssessmentAcs: i % 5 === 0,
+
+            policiesModel: [
+                {
+                    role: "User",
+                    permission: "Read"
+                }
+            ],
+
+            olaModel: [
+                {
+                    roleName: "User",
+                    lobName: "Renewal"
+                }
+            ]
+        });
+    }
+
+    parsed.report = expandedData;
+    reportData = parsed.report;
  
    /*  // Populate dropdown
     const select = document.getElementById("companySelect");

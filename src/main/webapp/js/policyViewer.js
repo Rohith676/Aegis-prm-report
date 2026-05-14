@@ -585,7 +585,7 @@ function initializePRMReportTable(jsonData) {
 	const nestedTables = new Map();
 
 	const table = new Tabulator("#prmReportTable", {
-		height: "auto",
+		height: "600px",
 		layout: "fitColumns",
 		columnDefaults: { resizable: true },
 		data: jsonData,
